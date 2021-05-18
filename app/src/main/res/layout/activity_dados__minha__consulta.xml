@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".user.Dados_Minha_Consulta">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+
+            android:text="DADOS DO PACIENTE"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <view
+            android:id="@+id/view"
+            class="androidx.recyclerview.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textView53"
+            android:background="#929292" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView59" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView53"
+            android:text="NOME DO PACIENTE:"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dado_nome"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView17"
+            android:text="NOME_USER"
+            android:textColor="#000000" />
+
+        <view
+            android:id="@+id/view2"
+            class="androidx.recyclerview.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_dado_nome"
+            android:background="#929292" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view2"
+            android:text="TIPO DE ATENDIMENTO:"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dado_tipoConsul"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView55"
+            android:text="IMPLANTE DENTÁRIO"
+            android:textColor="#000000" />
+
+        <view
+            android:id="@+id/view3"
+            class="androidx.recyclerview.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_dado_tipoConsul"
+            android:background="#929292" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view3"
+            android:text="DATA DA CONSULTA:"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dado_dataconsulta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView56"
+            android:text="DATA"
+            android:textColor="#000000" />
+
+        <view
+            android:id="@+id/view4"
+            class="androidx.recyclerview.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_dado_dataconsulta"
+            android:background="#929292" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view4"
+            android:text="CPF:"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dado_cpf"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView57"
+            android:text="CPF_USER"
+            android:textColor="#000000" />
+
+        <view
+            android:id="@+id/view5"
+            class="androidx.recyclerview.widget.RecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/txt_dado_cpf"
+            android:background="#929292" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view5" />
+
+        <Button
+            android:id="@+id/btn_cancelar_consul"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView66"
+            android:layout_centerInParent="true"
+            android:background="@drawable/circle_edt"
+            android:text="CANCELAR CONSULTA"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_retornarCP"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView65"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_left_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_cancelar_consul" />
+
+    </RelativeLayout>
+
+</ScrollView>

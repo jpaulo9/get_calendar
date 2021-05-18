@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    package="com.example.dentista">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".user.Usuario_Especialidades"></activity>
+        <activity android:name=".user.Marcar_Atendimento" />
+        <activity android:name=".user.Dados_Minha_Consulta" />
+        <activity android:name=".admin.Cadastrar_ProcedimentoMedico" />
+        <activity android:name=".user.Dados_User" />
+        <activity android:name=".admin.Dados_Admin" />
+        <activity android:name=".admin.Remover_Datas" />
+        <activity android:name=".admin.Lista_Especialidades" />
+        <activity android:name=".admin.Listar_DatasAtendimentosMarcados" />
+        <activity android:name=".admin.ListaPacientes" />
+        <activity android:name=".admin.Administrador" />
+        <activity android:name=".user.User_Perfil" />
+        <activity android:name="user.Cadastro" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

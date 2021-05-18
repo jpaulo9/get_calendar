@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".admin.Remover_Datas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="EXCLUIR DATA PARA ATENDIMENTO"
+            android:layout_below="@id/textView29"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/calendar_retire"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView30"/>
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendar_retire"/>
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView31"
+            android:text="DATA:"
+            android:textAlignment="center"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/data_retire_ver"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView31"
+            android:layout_toRightOf="@id/textView32"
+            android:textColor="#EF6C00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/data_retire_ver" />
+
+        <Button
+            android:id="@+id/btn_bloquedate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView34"
+            android:background="@drawable/circle_edt"
+            android:layout_centerHorizontal="true"
+            android:text="BLOQUEAR DATA"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_bloquedate"/>
+
+        <TextView
+            android:id="@+id/btn_retorne"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView35"
+            android:drawableBottom="@drawable/ic_keyboard_arrow_left_black_24dp" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

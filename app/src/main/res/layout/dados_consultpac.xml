@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp">
+
+
+        <ImageView
+            android:id="@+id/img_iconC"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            app:srcCompat="@drawable/ic_event_black_24dp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/img_iconC" />
+
+        <TextView
+            android:id="@+id/txt_nome_pac"
+            android:layout_width="220dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/textView24"
+            android:layout_toRightOf="@id/img_iconC"
+            android:text="Célio Souza"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_tipoConsulta"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_nome_pac"
+            android:layout_toRightOf="@id/img_iconC"
+            android:text="Manutenção Aparelho"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_dataCons"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/txt_tipoConsulta"
+            android:layout_toRightOf="@id/img_iconC"
+            android:text="03/06/2020"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_ficha_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/txt_nome_pac"
+            android:layout_below="@id/textView24"
+            app:srcCompat="@drawable/ic_assignment_black_24dp" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
